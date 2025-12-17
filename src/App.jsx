@@ -1,11 +1,12 @@
-import TextInputForm from "./Components/TextInputForm/TextInputForm";
+
+import TextInputFormContainer from "./Components/TextInputForm/TextInputFormContainer";
 
 function App() {
   return (
     <div>
       <h1>Hangman Game</h1>
 
-      <TextInputForm  onSubmit={(value)=>{console.log("value from hidden is", value)}} />
+      <TextInputFormContainer  onSubmit={(value)=>{console.log("value from hidden is", value)}} />
     </div>
   );
 }
