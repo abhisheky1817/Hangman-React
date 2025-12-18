@@ -6,7 +6,8 @@ function App() {
     <div>
       <h1>Hangman Game</h1>
 
-      <TextInputFormContainer  onSubmit={(value)=>{console.log("value from hidden is", value)}} />
+    <TextInputFormContainer  onSubmit={(value)=>{console.log("value from hidden is", value)}} />
+
     </div>
   );
 }
