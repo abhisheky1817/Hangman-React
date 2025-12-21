@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import TextInputFormContainer from "../../Components/TextInputForm/TextInputFormContainer";
 
 function PlayGame() {
 
@@ -6,7 +7,14 @@ function PlayGame() {
 
         <div>
             <h1>play game</h1>
-            <Link to={'/play'} >Playgame</Link>
+
+              <TextInputFormContainer
+        onSubmit={(value) => {
+          console.log("Word entered:", value);
+        }}
+      />
+
+            <Link to="/start">Go to Start Game</Link>
         </div>
     )
 }

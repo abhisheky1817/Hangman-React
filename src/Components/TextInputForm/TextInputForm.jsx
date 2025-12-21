@@ -21,11 +21,14 @@ function TextInputForm({handleformsubmit, handletextinputchange, setInputtype, v
            </div>
 
            <div>
+            
             <Button
-             styleType="warning"
+             buttonType="button"
+            styleType="secondary"
              text={inputType=== 'password' ? 'show' : 'hide'}
              onClickHandler = {()=>setInputtype(inputType === 'password' ? 'text' : 'password')}
             />
+
            </div>
 
             <div className = "flex">

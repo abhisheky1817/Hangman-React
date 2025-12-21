@@ -1,6 +1,6 @@
 import {Route, Routes} from "react-router-dom"
 import PlayGame from "./Pages/PlayGame/PlayGame";
-import StartGame from "./Pages/StartGamme/StartGame";
+import StartGame from "./Pages/StartGame/StartGame";
 
 function App() {
   return (
@@ -10,10 +10,10 @@ function App() {
     {/* <TextInputFormContainer  onSubmit={(value)=>{console.log("value from hidden is", value)}} /> */}
 
     <Routes>
-
+        <Route path="/" element={<StartGame />} />
       <Route path = "/play" element = {<PlayGame/>} />
       <Route path = "/start" element = {<StartGame/>} />
-      <Route  path="/*"  element = {<div>not found</div>}/>
+      <Route  path="*"  element = {<div>not found</div>}/>
       
 
     </Routes>
