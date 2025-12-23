@@ -7,13 +7,6 @@ function PlayGame() {
 
         <div>
             <h1>play game</h1>
-
-              <TextInputFormContainer
-        onSubmit={(value) => {
-          console.log("Word entered:", value);
-        }}
-      />
-
             <Link to="/start">Go to Start Game</Link>
         </div>
     )
